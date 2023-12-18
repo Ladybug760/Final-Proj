@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<body>
+	<form name="GymForm" onsubmit="return validation()">
+		<h1>Evolution's Gym Form</h1>
+		<fieldset>
+			<legend>Personal Information</legend>
+				First Name: <input type="text" name="fname" maxlength = "12" size = "20"> <br/><br/>
+				Last Name: <input type="text" name="lname" maxlength = "15"> <br/><br/>
+				Email:<input type="text" name="email" maxlength = "30"> <br/><br/>
+				Username:<input type = "text" name = "uname" maxlength = "12"><br><br>
+				Password:<input type = "password" name = "password" maxlength = "10"><br><br>
+				Address:<input name="address" size="40" type="text" maxlength = "20"><br><br>
+				City:<input name="city" size="15" type="text" maxlength = "12">
+				State: <input name="state" size="2" type="TEXT" maxlength = "2">
+				Zip: <input name="zip" size="5" type="text" maxlength = "5"><br><br>
+				Phone:<input name="phone" size="40" type="text" maxlength="10"><br><br>
+				Age:<input name = "age" size = "5" type = "text" maxlength = "3"><br><br>
+				Gender:
+				<input name="gender" type="radio">Male
+				<input name="gender" type="radio">Female			
+				<input name="gender" type="radio">Other
+			
+				
+				<br><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Gym Information</legend><br>
+				Primary Gym Location: 
+				<input name="location" type="radio">Queens
+				<input name="location" type="radio">Brooklyn<br><br>
+				
+				Would you like the Gym Passport (access to the two gyms)?
+				<select name="passport">
+				<option value = "passportna"> Select </option>
+				<option value = "yes">Yes</option>
+				<option value = "no">No</option>
+				</select><br/><br/>
+		
+				Select your training plan:<br><br>
+				<select name = "training">
+				<option value = "trainingna">Select</option>
+				<option value = "oly">Spin Class</option>
+				<option value = "power">Cardio and Weight Training</option>
+				<option value = "sports">Personal Training</option>
+				</select><br><br>
+				
+				
+				To help create better personalized training plans, please check <br>the days and time slot you'd
+						likely visit the gym.<br>If you have no prefrence, please leave blank:<br><br>
+
+				
+				<input name="monday" type="checkbox" value = "mon">Monday
+				<input name="tuesday" type="checkbox" value = "tues">Tuesday
+				<input name="wednesday" type="checkbox" value = "wed">Wednesday
+				<input name="thursday" type="checkbox" value = "thurs">Thursday<br>
+				<input name="friday" type="checkbox" value = "fri">Friday
+				<input name="saturday" type="checkbox" value = "sat">Saturday
+				<input name="sunday" type="checkbox" value = "sun">Sunday<br><br>
+				
+				Timeslot:
+				<select name='time'>
+				<option value = 'timena'> Select</option>
+				<option value = 'am'> 9:00am - 12:00pm</option>
+				<option value = 'pm'> 1:00pm - 7:00pm</option>
+				</select>
+				<br><br><br>
+				
+				Comments:<br><br>
+				<textarea name="commet" rows="5" cols="60">Please describe what you'd like to attain from training at Evolution's Gym.
+Some examples would be to lose weight, build muscle, tone down, or sports training.
+				</textarea><br><br>
+				
+				
+		</fieldset>
+		<br><br>
+		<p align = center><input type="submit" value="Submit Form" onClick="doSubmit()">
+		<input type="button" value="Clear Entries" onClick="doClear()"></p>
+	</form>
+	<br><br>
+	<table align = center width = "50%"><tr><td><a href="index.html">Our Gym's Website</td><td>
+	<a href="gym_form_valid.html">Please fill out our validated form via this link</a></td></tr></table><br><br> <br>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Evolution Gym</title>
+		<link rel="stylesheet" href = "gym_style.css"
+		type = "text/css" />
+		
+		
+		<script>
+		var imgArray = new Array(5);
+		var index = 0;
+		
+	
+		function cycle(){
+		document.banner.src = imgArray[index].src;
+		index++;
+		document.banner.height = 600;
+		document.banner.width = 1200;
+		
+		if (index>4)
+		{
+		index=0;
+		}
+		setTimeout("cycle()", 2000);
+		return;
+		}
+		
+		function startup()
+		{
+		imgArray[0] = new Image;
+		imgArray[0].src = "gym.jpg";
+		imgArray[1] = new Image;
+		imgArray[1].src = "gym1.jpg";
+		imgArray[2] = new Image;
+		imgArray[2].src = "gym2.jpg";
+		imgArray[3] = new Image;
+		imgArray[3].src = "gym3.jpg";
+		imgArray[4] = new Image;
+		imgArray[4].src = "gym4.jpg";
+		imgArray[5] = new Image;
+		imgArray[5].src = "gym5.jpg";
+		cycle();
+		return;
+		}
+		
+		</script>
+	<script src="gym_form_validation.js" defer></script>	
+	</head>
+	<body class="a", onLoad="startup()">
+	<h1 class="b">Evolution Gym<br></h1>
+	<table align = center syle = "background-color:blue;">
+		<tr><td><a href="#aboutus">About Us</a></td><td><a href="#services">Our Services</a></td>
+		<td><a href="#locations">Our Locations</a></td><td><a href="#prices">Our Prices</a></td><td><a href="#info">Contact Us</a></td><td><a href="gym_form.html">Gym Form</a></td>
+		</tr></table><br><br><br><br>
+		<img name = "banner" src = "gym.jpg">
+			<br><br><br><br><br><br><br><br><br>
+			<h1 class='d' id="aboutus"><br>About Us:<br><br>
+			<table align = center><tr><td>
+			Evolution Gym is your commuity gym that focuses on group workout training that focuses on strength builing and toning.<br> At Evolution Gym there is a spot for everyone whatever your fitness level.<br> 
+			Evolution Gym is a judgement free zone, Show up and put your best foot forward<br>And leave the rest to Us. 
+			Our Gym is a safe, clean and welcoming environment. Come find the group workout or strength training program that suits you.<br></td></tr></table><br><br></h1><br><br><br><br><br><br><br><br><br>
+			<h1 class='d' id="services"><br>Our Services:<br><br>
+			<table align = center>
+				<tr>
+					<td><img src = "spinclass.jpg" width = 350px height = 350px alt = 'Spin Class' title = 'Spin Class'></td>
+					<td><h1 class = "e">Best Cardio Burnout</h1>We have some of the best Spin Instructor's<br>Who bring their uniquie styles<br>a wide genre of upbeat music to spin along with<br>Build muscle, 
+					or tone up<br>The results are sure to impress you.<br><br>Just Show Up and Commit</td></tr>
+				<tr>
+					<td><img src = "cardioandweighttraining.jpg" width = 350px height = 350px alt = 'Cardio and Weight Training' title = 'Cardio and Weight Training Class'></td>
+					<td><h1 class = "e">Cardio and Weight Training</h1>This class has been created to offer a cardio workout with strength training together.<br>Our client do squats, burpes, curls, stretches and much more in these sessions.<br> 
+					<br>Do you want to have fun and build muscle come and experience this class!</td></tr>
+				<tr>
+					<td><img src = "personaltraining.jpg" width = 350px height = 350px alt = 'Personal Training' title = 'Personal Training'></td>
+					<td><h1 class = "e">Personal Training</h1>Our professional personal trainer can help you attain your goals.<br>Lost weight, gain weight or maintain and tone<br><br>They have the plan for you.</td></tr>
+				<tr>
+					<td><img src = "trainonyourown.jpg" width = 350px height = 350px alt = 'Train at Your Speed' title = 'Train at Your Speed'></td>
+					<td><h1 class = "e">Train at Your Own Speed</h1>Individuals can train at their own speed<br>We have threadmills, elipticals and weight equipment for everyone's needs<br>group training allows for
+						<br>Feel free to consult with or trained staff if you need help.</br>
+			
+			</table><br><br>
+			</h1><br><br><br><br><br><br><br>
+			<h1 class='d' id="locations"><br>Our Locations:<br><br>
+			<table align = center>
+			<tr><td>Evolution Gym currently has two locations throughout the city.<br>Our memberships allows for a specific gym access or a passport for access<br>to all two gyms.</td></tr>
+				<tr><td>Queens<br>Brooklyn</td></tr></table><br> <br></h1><br><br><br><br><br><br><br>
+				
+			<h1 class = 'd' id='prices'><br>Pricing:<br><br>
+			<table align = center>
+			<tr><td>One training plan with access to one coach<br>and a personalized training plan:</td><td>$200 per month</td></tr>
+			<tr><td>Open gym (No training plan) with access to<br> our equipment:</td><td>$75 per month</td></tr>
+			<tr><td>We accept credit cards and cash<br>for monthly payments</td><td>Please view our form and fill out if<br>you want to become a member of <br>Evolution Gym!</td></tr>
+			</table><br><br></h1><br><br><br><br><br><br><br>
+			
+			<h1 class = 'd' id = 'info'><br>Contact Us:<br><br>
+			<table align = center>
+			<tr><td>20 Ozone Street | (718) 332-6771 | <a href="mailto:Lacey.HazelPhillip@mail.citytech.cuny.edu">Gym Email</a> | 
+			<a href="gym_form.html">Gym Form</a></td></tr></table><br><br></h1>
+				
+
+	</body>
+</html>
