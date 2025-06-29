@@ -4,4 +4,6 @@ My Personal Portfolio made use of animation like (showRight) for sleek content r
 The design includes hover and active styles. There is also a visible hierarchy H1 > H3.
 My animated one page portfolio homepage introduces the skills an emerging frontend developer. 
 
+This is the link to the site: https://ladybug760.github.io/Final-Proj/
+
 
